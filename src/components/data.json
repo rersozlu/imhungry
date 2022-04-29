@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Coca-Cola",
+    "description": "I drink 5 bottles per day. 2 after lunch, 3 at random times.",
+    "price": "0.1",
+    "image": "./imgs/coke.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Favorite Drink",
+    "description": "Im broke due to my excessive starbucks intake. Cant make my own coffee, it makes heart palpitations",
+    "price": "0.1",
+    "image": "./imgs/drink.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Kebab",
+    "description": "Nuri Usta was 5 Turkish Lira to eat in Taxim. Due to the inflation i cannot afford this one as well",
+    "price": "0.3",
+    "image": "./imgs/nuriusta.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Burqa",
+    "description": "I forgot all my outfits in Paqistan. Need one from Eminonu to dress during special days.",
+    "price": "0.5",
+    "image": "./imgs/arabian.jpg"
+  }
+]
