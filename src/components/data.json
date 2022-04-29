@@ -3,26 +3,26 @@
     "id": "1",
     "title": "Coca-Cola",
     "description": "I drink 5 bottles per day. 2 after lunch, 3 at random times.",
-    "price": "0.1",
+    "price": "0.05",
     "image": "./imgs/coke.jpg"
   },
   {
     "id": "2",
-    "title": "Favorite Drink",
+    "title": "Starbucks Beverage",
     "description": "Im broke due to my excessive starbucks intake. Cant make my own coffee, it makes heart palpitations",
-    "price": "0.1",
+    "price": "0.07",
     "image": "./imgs/drink.jpg"
   },
   {
     "id": "3",
     "title": "Kebab",
     "description": "Nuri Usta was 5 Turkish Lira to eat in Taxim. Due to the inflation i cannot afford this one as well",
-    "price": "0.3",
+    "price": "0.1",
     "image": "./imgs/nuriusta.jpg"
   },
   {
     "id": "4",
-    "title": "Burqa",
+    "title": "Traditional Dress",
     "description": "I forgot all my outfits in Paqistan. Need one from Eminonu to dress during special days.",
     "price": "0.5",
     "image": "./imgs/arabian.jpg"
@@ -38,7 +38,14 @@
     "id": "6",
     "title": "Macbook",
     "description": "Wrote these codes in 6 hours... Need something faster",
-    "price": "12",
+    "price": "13",
     "image": "./imgs/macbook.jpg"
+  },
+  {
+    "id": "7",
+    "title": "Rent for a New Flat",
+    "description": "There is a cursed location called MED in Istanbul Technical University. I want to take some of my friends out there...",
+    "price": "7",
+    "image": "./imgs/rental.jpeg"
   }
 ]
