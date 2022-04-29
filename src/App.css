@@ -36,6 +36,19 @@ p {
   text-align: center;
   background-color: beige;
 }
+@media (max-width: 1400px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+  .card {
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .card {
+    width: 90%;
+  }
+}
 
 .card > img {
   width: 30%;
