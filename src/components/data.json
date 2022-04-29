@@ -26,5 +26,19 @@
     "description": "I forgot all my outfits in Paqistan. Need one from Eminonu to dress during special days.",
     "price": "0.5",
     "image": "./imgs/arabian.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Pillow",
+    "description": "Hasbullah is my fav celeb and couldnt even buy a pillow of him.",
+    "price": "0.3",
+    "image": "./imgs/hasbulla.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Macbook",
+    "description": "Wrote these codes in 6 hours... Need something faster",
+    "price": "12",
+    "image": "./imgs/macbook.jpg"
   }
 ]
