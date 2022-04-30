@@ -19,6 +19,14 @@ h1 {
   margin-left: 5px;
 }
 
+a,
+a:visited {
+  color: rgba(255, 255, 255, 0.87);
+}
+a:hover {
+  color: beige;
+}
+
 p {
   margin: 0.2em 0;
 }
