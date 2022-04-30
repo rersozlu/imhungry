@@ -8,11 +8,8 @@ export default function Header({ walletMsg, connectAcc }) {
         </button>
       </div>
       <p className="header--bot">
-        I{" "}
-        <a target="_blank" href="https://www.youtube.com/watch?v=nk7Cj209GQg">
-          selled my wife for internet connection
-        </a>{" "}
-        last week. I need something to eat and drink. Please help me.
+        I selled my wife for internet connection last week. I need something to
+        eat and drink. Please help me.
       </p>
     </header>
   );
