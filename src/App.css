@@ -115,6 +115,7 @@ header {
   padding: 0.1em 3em;
   text-align: center;
   font-weight: 400;
+  border-radius: 8px;
 }
 @media (max-width: 1400px) {
   .cardsContainer {
