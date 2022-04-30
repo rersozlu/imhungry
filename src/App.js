@@ -52,6 +52,7 @@ function App() {
 
   const buyMe = async (amount) => {
     try {
+      connectWallet();
       const { ethereum } = window;
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum);
