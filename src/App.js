@@ -29,6 +29,7 @@ function App() {
         const account = accounts[0];
         console.log("Found an authorized account: ", account);
         setCurrentAccount(account);
+        setWalletMsg("Connected");
       } else {
         console.log("No auth account found");
       }
@@ -36,6 +37,9 @@ function App() {
       console.log(error);
     }
   };
+  useEffect(() => {
+    window.ethereum.on("accountChanged", isWalletConnected);
+  });
 
   const connectWallet = async () => {
     try {
@@ -47,13 +51,31 @@ function App() {
       const accounts = await ethereum.request({
         method: "eth_requestAccounts",
       });
-      setWalletMsg("Connected");
-      console.log("Connected", accounts[0]);
+      console.log("Connected to write ", accounts[0]);
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const { chainId } = await provider.getNetwork();
+      if (chainId !== 43114) {
+        await ethereum.request({
+          method: "wallet_addEthereumChain",
+          params: [
+            {
+              chainId: "0xA86A",
+              rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+              chainName: "Avalanche Network",
+              nativeCurrency: {
+                name: "AVAX",
+                symbol: "AVAX",
+                decimals: 18,
+              },
+              blockExplorerUrls: ["https://snowtrace.io/"],
+            },
+          ],
+        });
+      }
     } catch (error) {
       console.log(error);
     }
   };
-
   const buyMe = async (amount) => {
     try {
       connectWallet();
@@ -79,7 +101,6 @@ function App() {
       console.log(error);
     }
   };
-
   useEffect(() => {
     isWalletConnected();
   }, []);
