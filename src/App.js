@@ -38,7 +38,9 @@ function App() {
     }
   };
   useEffect(() => {
-    window.ethereum.on("accountChanged", isWalletConnected);
+    if (window.ethereum) {
+      window.ethereum.on("accountChanged", isWalletConnected);
+    }
   });
 
   const connectWallet = async () => {
