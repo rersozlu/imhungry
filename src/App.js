@@ -7,6 +7,10 @@ import { ethers } from "ethers";
 import abi from "./abi.json";
 
 function App() {
+  const [formValue, setFormValue] = useState("");
+  const handleChange = (e) => {
+    setFormValue(e.target.value);
+  };
   const contractAddress = "0x545DeDeF9A3385F70fb585ABd57de811845ab156";
   const contractABI = abi.abi;
   const [walletMsg, setWalletMsg] = useState("Connect Wallet");
@@ -95,7 +99,34 @@ function App() {
   return (
     <div className="App">
       <Header walletMsg={walletMsg} connectAcc={connectWallet} />
-      <div className="cardsContainer">{cards}</div>
+      <div className="cardsContainer">
+        {cards}
+        <div className="form">
+          <h2>Custom Donation</h2>
+          <br />
+          <form>
+            <input
+              type="text"
+              name="amount"
+              onChange={handleChange}
+              placeholder="Amount"
+              value={formValue}
+            />
+
+            <br />
+            <br />
+            <button
+              className="buy"
+              onClick={(e) => {
+                e.preventDefault();
+                buyMe(formValue);
+              }}
+            >
+              Avax
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

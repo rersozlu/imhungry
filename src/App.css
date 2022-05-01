@@ -117,19 +117,57 @@ header {
   font-weight: 400;
   border-radius: 8px;
 }
+
+.form {
+  margin: 1em;
+  color: rgba(255, 0, 0, 0.582);
+  width: 30%;
+  border-radius: 15px;
+  padding: 1em 1em;
+  text-align: center;
+  background-color: beige;
+}
+
+.form > h2 {
+  color: rgba(255, 0, 0, 0.582);
+}
+
+input {
+  color: rgba(255, 0, 0, 0.582);
+  font-size: 1.1em;
+  width: 90%;
+  padding: 1em 1.8em;
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 0, 0, 0.582);
+  background-image: url("/public/avax.jpg");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: -1% 46%;
+  font-weight: bold;
+}
+
 @media (max-width: 1400px) {
   .cardsContainer {
     flex-direction: column;
   }
-  .card {
+  .card,
+  .form {
     width: 60%;
+  }
+  input {
+    background-size: 10%;
   }
 }
 @media (max-width: 1000px) {
-  .card {
+  .card,
+  .form {
     width: 90%;
   }
   .header--bot {
     border-radius: 15px;
+  }
+
+  input {
+    background-size: 9%;
   }
 }
