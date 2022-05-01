@@ -72,6 +72,8 @@ function App() {
           ],
         });
       }
+
+      setWalletMsg("Connected");
     } catch (error) {
       console.log(error);
     }
